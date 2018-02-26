@@ -1,0 +1,61 @@
+/*GENERAL A PARTICULAR*/
+
+/*Resetear márgenes y padding
+que traen por defecto las etiquetas*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*CLASE AUXILIAR QUE LA VOY A 
+USAR MUCHAS VECES*/
+.limpiar{
+    clear:both;
+}
+
+body{
+    /*    font: italic small-caps bold .9em/1.1em 
+            "Tahoma", sans-serif;*/
+    font: 14px "Trebuchet MS", sans-serif;
+    /*background-color: #330033;*/
+    /*background-image: url(12.jpg);*/
+    /*background:
+    color imagen posicion x y repeat attachment;*/
+    background: #333333 url(12.jpg) right bottom
+        no-repeat fixed;
+    background-size: cover;
+    color:beige;
+}
+
+#contenedor{
+    background-color: #999;
+    /*ancho total que ocupa: 1200px;*/
+    width: 1140px;
+    /*    width: 80%;*/
+    /*    centrar caja de bloque
+        respecto a caja padre*/
+    margin: 0 auto;
+    padding: 20px;
+    border:10px solid crimson;
+    /*box-sizing: border-box;*/
+    /*reconocer cajas de adentro que flotan*/
+    overflow: hidden;
+}
+
+p{
+    margin-top: 15px;
+    width: 50%;
+    float:left;
+}
+
+p:nth-of-type(2n){
+    background-color: aquamarine;
+}
+
+p:nth-of-type(2n+1){
+    background-color: darkorange;
+}
+
+p:first-child, p:nth-child(2){
+    margin-top: 0;
+}
