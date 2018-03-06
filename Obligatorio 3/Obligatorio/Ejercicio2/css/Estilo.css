@@ -1,23 +1,413 @@
-#logoppal {
-    height: 35px;
+img {
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.thumbnail {
-  height: 450px;
+a {
+    text-decoration: none;
 }
 
-td {
-  color: green;
+*, *:before, *:after {box-sizing:  border-box !important;}
+
+
+.rowlist {
+ -moz-column-width: 18em;
+ -webkit-column-width: 18em;
+ -moz-column-gap: 1em;
+ -webkit-column-gap: 1em;
+
 }
 
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
+.menu-category {
+ display: inline-block;
+ margin:  0.25rem;
+ padding:  1rem;
+ width:  100%;
+}
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) { ... }
+.panel-title {
+    text-align: center;
+}
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { ... }
+.list-group-item:hover {
+    background-color: #f5f5f5;
+}
 
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) { ... }
+div.panel.panel-primary {
+    border: 1px solid lightgrey;
+}
+
+.glyphicon:not(.glyphicon-chevron-up):not(.glyphicon-search):not(.glyphicon-home) {
+    padding-right: 10px;
+    font-size: 1.20em;
+}
+
+.glyphicon-remove {
+    color: #ff6f69;
+}
+
+.glyphicon-home {
+    font-size: 1.20em;
+}
+
+.btn-lg {
+    font-size: 1.20em;
+}
+
+.back-to-top {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	cursor: pointer;
+    display: none;
+ }
+
+#custom-search-input{
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+
+.title {
+    color: rgba(255, 255, 255, 0.938);
+}
+
+.row-div {
+    background: #398564;
+    background: linear-gradient(to right, #52bf90, #9ed670);
+    padding-top: 5px;
+    padding-left: 15px;
+    border-radius: 5px;
+}
+
+.page-header {
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.row-text {
+    margin-left: 1px;
+}
+
+.p-services {
+    margin-bottom: 30px;
+}
+
+th { 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.muted {
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+li {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.10em;
+}
+
+.page-btext {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.panel-title-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2.00px;
+    font-size: 0.90em;
+}
+
+.simple-text {
+    font-size: 1.10em;
+}
+
+.col {
+    padding-left: 0px;
+}
+
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) { 
+
+    .thumbnail img {
+        height:220px;
+        width:100%;
+    }
+
+    .thumbnail {
+        height: 370px;
+    }
+ 
+    #logoppal {
+        height: 40px;
+        width: 230px;
+        margin: 5px 0px 20px 0px;
+    }
+
+    .row-navbar li {
+        text-align: center;
+        display: inline;
+        width: 100%;
+      }
+
+    .row-navbar ul {
+        display: flex;
+    }
+
+    .navbar-form {
+        border: 0px;
+        padding: 0px 15;
+    }
+
+    #myCarousel {
+        margin-top: 170px;
+    }
+
+    .panel-title-text {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 1.00px;
+        font-size: 0.75em;
+    }
+    
+
+ }
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) { 
+    
+    .thumbnail img {
+        height:220px;
+        width:100%;
+    }
+
+    .thumbnail {
+        height: 370px;
+    }
+
+    #logoppal {
+        height: 40px;
+        width: 230px;
+        margin: 5px 0px 20px 120px;
+    }
+
+    .row-navbar li {
+        text-align: center;
+        display: inline;
+        width: 100%;
+      }
+
+    .row-navbar ul {
+        display: flex;
+    }
+
+    .navbar-form {
+        border: 0px;
+        padding: 0px 15;
+    }
+
+    #myCarousel {
+        margin-top: 170px;
+    }
+
+    .panel-title-text {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 2.00px;
+        font-size: 0.90em;
+    }
+
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) { 
+
+    .thumbnail img {
+        height:250px;
+        width:100%;
+    }
+
+    .thumbnail {
+        height: 390px;
+    }
+
+    #logoppal {
+        height: 40px;
+        width: 230px;
+        margin: 5px 0px 20px 0px;
+
+    }
+
+    li {
+        padding-right: 5px;
+    }
+
+    input[type="text"] {
+        margin-right: 40px;
+        -webkit-transition: all .7s ease;
+        -moz-transition: all .7s ease;
+        transition: all .7s ease;
+    }
+
+    span.glyphicon.glyphicon-chevron-right, span.glyphicon.glyphicon-chevron-left {
+        margin-top: 50px;
+    }
+
+    .panel-title-text {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 2.00px;
+        font-size: 0.90em;
+    }
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) { 
+ 
+    .thumbnail img {
+        height:250px;
+        width:100%;
+    }
+
+    .thumbnail {
+        height: 390px;
+    }
+
+    #logoppal {
+        margin-top: 5px;
+        margin-left: 3px;
+        height: 35px;
+    }
+
+    .navbar-nav {
+        margin-left: 7px;
+    }
+
+    .navbar-left {
+        padding-left: 7px;
+    }
+
+    input[type="text"] {
+        margin-right: 800px;
+        -webkit-transition: all .7s ease;
+        -moz-transition: all .7s ease;
+        transition: all .7s ease;
+    }
+
+    .glyphicon-home {
+        padding: 0px 5px;
+        font-size: 1.20em;
+    }
+
+    li:not(.carousel-indicator) {
+        padding-right: 15px;
+    }
+
+    footer {
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+
+    #myCarousel {
+        margin-top: 30px;
+    }
+
+    span.glyphicon.glyphicon-chevron-right, span.glyphicon.glyphicon-chevron-left {
+        margin-top: 50px;
+    }
+
+    .panel-title-text {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 2.00px;
+        font-size: 0.90em;
+    }
+
+ }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  
+    
+    #logoppal {
+        margin-right: 50px;
+    }
+
+    input[type="text"] {
+        -webkit-transition: all .7s ease;
+        -moz-transition: all .7s ease;
+        transition: all .7s ease;
+    }
+
+    input[type="text"]:focus {
+        margin-right: 435px;
+        -webkit-transition: all .7s ease;
+        -moz-transition: all .7s ease;
+        transition: all .7s ease;
+    }
+
+    .item {
+        height: 600px;
+    }
+
+    .container-fluid {
+        width: 1900px;
+    }
+
+    .glyphicon-home {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 1.40em;
+    }
+
+    .thumbnail img {
+        height:350px;
+        width:100%;
+    }
+
+    .thumbnail {
+        height: 470px;
+    }
+
+    #logoppal {
+        margin-top: 5px;
+        height: 33px;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+
+    #myCarousel {
+        margin-top: 30px;
+    }
+
+    .panel-title-text {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 2.00px;
+        font-size: 0.90em;
+    }
+}

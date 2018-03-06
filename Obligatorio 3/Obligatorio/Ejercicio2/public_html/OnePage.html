@@ -2,336 +2,745 @@
   <html lang="es">
     <head>
       <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
       <meta name="Keywords" content="">
       <meta name="Description" content="">
       <meta name=”revisit-after” content=”period”>
       <meta name=”robots” content=INDEX>
       <meta name="Author" content="Gonzalo Otheguy, gonzalo.otheguy@hotmail.com">
       <meta name="Copyright" content ="Derechos Reservados">
-      <link rel="stylesheet" type="text/css" href="../css/Estilo.css" media="screen">
       <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <script src="../js/jquery.js" type="text/javascript"></script>
+      <link rel="stylesheet" type="text/css" href="../css/Estilo.css" media="screen">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.js" type="text/javascript"></script>
       <script src="../js/Funciones.js" type="text/javascript"></script>
       <title>Espacio Verde</title>
     </head>
 
     <body>
-        <header>
-          <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                <a class="navbar-brand" href="#">
-                  <a href="OnePage.html">
-                    <img src="../img/logo2.png" id="logoppal" title="Home" alt="Logo de la página">
+      <header id="home">
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="row row-navbar">
+              <div class="col-xs-12 col-sm-6 col-md-12 col-lg-2 col-xl-2">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="#">
+                    <a href="OnePage.html">
+                      <img src="../img/image.png" id="logoppal" class="img-fluid" alt="Logo de la página">
+                    </a>
                   </a>
-                </a>
+                </div>
               </div>
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Home">Home <span class="badge">12</span></a></li>
-                <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Que Hacemos?">Que Hacemos?</a></li>
-                <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Empresa">Empresa</a></li>
-                <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Servicios">Servicios</a></li>
-                <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Calendarios">Calendarios</a></li>
-                <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Trabajos">Trabajos Realizados</a></li>
-                <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Suscripciones">Suscripciones</a></li>
-              </ul>
-                  <form class="navbar-form navbar-left" action="/action_page.php">
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Buscar.." name="search">
-                  <div class="input-group-btn">
-                    <button class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Buscar" type="submit">
-                      <i class="glyphicon glyphicon-search"></i>
-                    </button>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-10">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#home" data-toggle="tooltip" data-placement="bottom" title="Home"><span class="glyphicon glyphicon-home"></span></a></li>
+                  <li><a href="#quehacemos" data-toggle="tooltip" data-placement="bottom" title="Que Hacemos?"><span class="glyphicon glyphicon-edit"></span><span class="hidden-xs hidden-sm">Que Hacemos?</span></a></li>
+                  <li><a href="#empresa" data-toggle="tooltip" data-placement="bottom" title="Empresa"><span class="glyphicon glyphicon-briefcase"></span><span class="hidden-xs hidden-sm">Empresa</span></a></li>
+                  <li><a href="#servicios" data-toggle="tooltip" data-placement="bottom" title="Servicios"><span class="glyphicon glyphicon-th-list"></span><span class="hidden-xs hidden-sm">Servicios</span></a></li>
+                  <li><a href="#calendarios" data-toggle="tooltip" data-placement="bottom" title="Calendarios"><span class="glyphicon glyphicon-calendar"></span><span class="hidden-xs hidden-sm">Calendarios</span></a></li>
+                  <li><a href="#trabajos" data-toggle="tooltip" data-placement="bottom" title="Trabajos"><span class="glyphicon glyphicon-film"></span><span class="hidden-xs hidden-sm">Trabajos</span></a></li>
+                  <li><a href="#suscripciones" data-toggle="tooltip" data-placement="bottom" title="Suscripciones"><span class="glyphicon glyphicon-inbox"></span><span class="hidden-xs hidden-sm">Suscripciones</span></a></li>
+                </ul>
+                <form class="navbar-form navbar-left" action="/action_page.php">
+                  <div id="custom-search-input">
+                      <div class="input-group">
+                      <input type="text" class="form-control search" placeholder="Buscar.." name="search">
+                      <div class="input-group-btn">
+                        <button class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Buscar" type="submit">
+                          <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                      </div>
                   </div>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
-          </nav>
-        </header>
-
-<section>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <img src="../img/flores1.jpg" class="img-responsive" id="logoppal" alt="Logo de la página" style="width: 100%; height: 450px;">
-        </div>
-      </div>
-    </div>
-</section>
-
-<section>
-  <article>
-    <div class="container">
-      <div class="page-header">
-        <h1>Que Hacemos?</h1>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-          <h3>Mantenimiento de jardines</h3>
-            <p>Desde complejos hasta propiedades particulares, nuestro objetivo es que nuestros
-               clientes puedan disfrutar los espacios verdes de su propiedad.</p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-          <h3>Construcción de jardines</h3>
-          <p>Ofrecemos un servicio integral para el diseño de espacios verdes y sistemas de riego</p>
-        </div>
-        <div class="hidden-xs col-sm-6 col-md-3 col-lg-3">
-          <h3>Mantenimiento de jardines</h3>
-            <p>Desde complejos hasta propiedades particulares, nuestro objetivo es que nuestros
-               clientes puedan disfrutar los espacios verdes de su propiedad.</p>
-        </div>
-        <div class="hidden-xs col-sm-6 col-md-3 col-lg-3">
-          <h3>Construcción de jardines</h3>
-          <p>Ofrecemos un servicio integral para el diseño de espacios verdes y sistemas de riego</p>
-        </div>
-      </div>
-    </div>
-  </article>
-</section>
-
-<section>
-  <article>
-    <div class="container">
-      <div class="page-header">
-        <h1>Nuestra Empresa</h1>
-      </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <p>Con más de 20 años de experiencia en el rubro.
-                 Nuestro propósito es brindar un servicio completo en jardinería.</p>
-              <p>Espacio verde se formó hace más de 20 años. Fue creada con el propósito de brindar un
-                 servicio completo en jardinería, que no existía en ese momento en Uruguay. Fue la
-                 primera empresa productora de césped en rollo de nuestro país. A partir de 2015 se forma
-                 Espacio verde Este, empresa que tiene su base de operaciones en la zona este del
-                 Uruguay.</p>
-              <p>Actualmente contamos con una plantilla de más de 90 colaboradores, especializados en
-                 brindar un servicio acorde a una gama muy amplia y variada de clientes.</p>
           </div>
-        </div>
-      </div>
-  </article>
-</section>
+        </nav>
+      </header>
 
-<section>
-  <article>
-    <div class="container">
-      <div class="page-header">
-        <h1>Nuestros Servicios</h1>
-      </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <p>Están dedicados al diseño, construcción y mantenimiento de espacios verdes; instalación
-                de sistemas de riego en parques y jardines; instalación de riego agrícola; construcción y
-                mantenimiento de campos deportivos; producción e instalación de césped en rollo.</p>
-              <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="thumbnail">
-                    <img src="../img/servicios16.jpg" alt="Construcción de jardines">
-                    <div class="caption">
-                      <h3>Construcción de jardines</h3>
-                      <p>Diseño de espacios verdes - Nivelación y moldeado - Instalación de césped - Sistema de riego - Plantación</p>
+      <section>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active carousel-indicator"></li>
+                    <li data-target="#myCarousel" data-slide-to="1" class="carousel-indicator"></li>
+                    <li data-target="#myCarousel" data-slide-to="2" class="carousel-indicator"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="../img/flores2.jpg" class="img-responsive" alt="Diseño Floral">
+                      <div class="carousel-caption">
+                        <h3>Diseño Floral</h3>
+                        <p>ESPACIO VERDE</p>
                       </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="thumbnail">
-                    <img src="../img/servicios03.jpg" alt="Construcción de jardines">
-                    <div class="caption">
-                      <h3>Mantenimiento</h3>
-                      <p>Jardines pequeños - Edificios - Complejos - Complejos deportivos - Espacios verdes - Áreas Públicas</p>
+                    </div>
+                    <div class="item">
+                      <img src="../img/flores1.jpg" class="img-responsive img-carousel" alt="Diseño Interior">
+                      <div class="carousel-caption">
+                        <h3>Diseño Interior</h3>
+                        <p>ESPACIO VERDE</p>
                       </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="thumbnail">
-                    <img src="../img/servicios06.jpg" alt="Construcción de jardines">
-                    <div class="caption">
-                      <h3>Sistemas de riego</h3>
-                      <p>Instalación agrícola o de propiedades - Service de riego - Venta de insumos de riego</p>
+                    </div>
+                    <div class="item">
+                      <img src="../img/flores3.jpg" class="img-responsive" alt="Jardinería">
+                      <div class="carousel-caption">
+                        <h3>Jardinería</h3>
+                        <p>ESPACIO VERDE</p>
                       </div>
+                    </div>
                   </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="thumbnail">
-                    <img src="../img/servicios08.jpg" alt="Construcción de jardines">
-                    <div class="caption">
-                      <h3>Servicios para paisajistas</h3>
-                      <p>Vendemos insumos y brindamos asesoramiento y logística</p>
-                      </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="thumbnail">
-                    <img src="../img/servicios13.jpg" alt="Construcción de jardines">
-                    <div class="caption">
-                      <h3>Iluminación de jardines</h3>
-                      <p>Diseñamos la iluminación para tu jardín</p>
-                      </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="thumbnail">
-                    <img src="../img/servicios09.jpg" alt="Construcción de jardines">
-                    <div class="caption">
-                      <h3>Construcción Pérgolas y Decks</h3>
-                      <p>Nos adaptamos a tus espacios para brindarte la mejor solución</p>
-                      </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="thumbnail">
-                    <img src="../img/servicios04.jpg" alt="Construcción de jardines">
-                    <div class="caption">
-                      <h3>Venta de césped en rollo</h3>
-                      <p>Trabajamos con la variedad bermuda y axonopus</p>
-                      </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="thumbnail">
-                    <img src="../img/servicios05.jpg" alt="Construcción de jardines">
-                    <div class="caption">
-                      <h3>Venta de plantas</h3>
-                      <p>Tenemos plantas de interior y exterior</p>
-                      </div>
-                  </div>
+                
+                  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Anterior</span>
+                  </a>
+                  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Siguiente</span>
+                  </a>
                 </div>
               </div>
             </div>
-         </div>
-      </div>
-  </article>
-</section>
-
-<section>
-  <article>
-    <div class="container">
-      <div class="page-header">
-        <h1>Calendarios</h1>
-      </div>
-      <p>Calendario de tareas</p>
-      <div class="table-responsive"></div>
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th scope="col"></th>
-              <th scope="col">Podar</th>
-              <th scope="col">Recortar</th>
-              <th scope="col">Plantar</th>
-              <th scope="col">Abonar</th>
-              <th scope="col">Acolchar</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Enero</th>
-              <td>X</td>
-              <td>X</td>
-              <td></td>
-              <td>X</td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row">Febrero</th>
-              <td>X</td>
-              <td>X</td>
-              <td>X</td>
-              <td>X</td>
-              <td>X</td>
-            </tr>
-            <tr>
-              <th scope="row">Marzo</th>
-              <td></td>
-              <td></td>
-              <td>X</td>
-              <td>X</td>
-              <td>X</td>
-            </tr>
-            <tr>
-              <th scope="row">Abril</th>
-              <td></td>
-              <td></td>
-              <td>X</td>
-              <td>X</td>
-              <td>X</td>
-            </tr>
-            <tr>
-              <th scope="row">Mayo</th>
-              <td>X</td>
-              <td></td>
-              <td>X</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row">Junio</th>
-              <td></td>
-              <td>X</td>
-              <td></td>
-              <td>X</td>
-              <td>X</td>
-            </tr>
-            <tr>
-              <th scope="row">Julio</th>
-              <td>X</td>
-              <td>X</td>
-              <td></td>
-              <td>X</td>
-              <td>X</td>
-            </tr>
-            <tr>
-              <th scope="row">Agosto</th>
-              <td>X</td>
-              <td>X</td>
-              <td></td>
-              <td>X</td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row">Septiembre</th>
-              <td></td>
-              <td></td>
-              <td>X</td>
-              <td>X</td>
-              <td>X</td>
-            </tr>
-            <tr>
-              <th scope="row">Octubre</th>
-              <td></td>
-              <td></td>
-              <td>X</td>
-              <td>X</td>
-              <td>X</td>
-            </tr>
-            <tr>
-              <th scope="row">Noviembre</th>
-              <td></td>
-              <td>X</td>
-              <td>X</td>
-              <td>X</td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row">Diciembre</th>
-              <td>X</td>
-              <td>X</td>
-              <td>X</td>
-              <td>X</td>
-              <td>X</td>
-            </tr>
           </div>
-        </tbody>
-      </table>
-    </div>
-  </article>
-</section>
+        </section>
+        <span id="quehacemos"></span>
+        <section>
+          <article>
+            <div class="container-fluid">
+              <div class="row row-text">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col">             
+                  <div class="page-header row-div title">
+                      <h3>Que Hacemos?</h3>
+                    </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-12">
+                  <h4 class="text-muted page-btext">Mantenimiento de jardines</h4>
+                    <p class="simple-text">Desde complejos hasta propiedades particulares, nuestro objetivo es que nuestros
+                       clientes puedan disfrutar los espacios verdes de su propiedad.</p>
+                </div>
+                <div class="hidden-xs col-sm-6 col-md-6 col-lg-3 col-xl-12">
+                    <h4 class="text-muted page-btext">Mantenimiento de jardines</h4>
+                    <p class="simple-text">Desde complejos hasta propiedades particulares, nuestro objetivo es que nuestros
+                       clientes puedan disfrutar los espacios verdes de su propiedad.</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-12">
+                    <h4 class="text-muted page-btext">Construcción de jardines</h4>
+                    <p class="simple-text">Ofrecemos un servicio integral para el diseño de espacios verdes y sistemas de riego</p>
+                </div>
+                <div class="hidden-xs col-sm-6 col-md-6 col-lg-3 col-xl-12">
+                  <h4 class="text-muted page-btext">Construcción de jardines</h4>
+                  <p class="simple-text">Ofrecemos un servicio integral para el diseño de espacios verdes y sistemas de riego</p>
+                </div>
+              </div>
+              <div id="empresa" class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col">   
+                <div class="page-header row-div title">
+                    <h3>Nuestra Empresa</h3>
+                  </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <p class="simple-text">Con más de 20 años de experiencia en el rubro.
+                           Nuestro propósito es brindar un servicio completo en jardinería.</p>
+                        <p class="simple-text">Espacio verde se formó hace más de 20 años. Fue creada con el propósito de brindar un
+                           servicio completo en jardinería, que no existía en ese momento en Uruguay. Fue la
+                           primera empresa productora de césped en rollo de nuestro país. A partir de 2015 se forma
+                           Espacio verde Este, empresa que tiene su base de operaciones en la zona este del
+                           Uruguay.</p>
+                        <p class="simple-text">Actualmente contamos con una plantilla de más de 90 colaboradores, especializados en
+                           brindar un servicio acorde a una gama muy amplia y variada de clientes.</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </article>
+        </section>
 
+        <section>
+          <article>
+            <div class="container-fluid">
+              <div class="row row-text">
+                <div id="servicios" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col">             
+                  <div class="page-header row-div title">
+                      <h3>Nuestros Servicios</h3>
+                    </div>
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <p class="p-services simple-text">Están dedicados al diseño, construcción y mantenimiento de espacios verdes; instalación
+                        de sistemas de riego en parques y jardines; instalación de riego agrícola; construcción y
+                        mantenimiento de campos deportivos; producción e instalación de césped en rollo.</p>
+                      <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                          <div class="thumbnail">
+                            <img src="../img/servicios16.jpg" class="img-responsive" alt="Construcción de jardines">
+                            <div class="caption">
+                              <h4 class="page-btext">Construcción de jardines</h4>
+                              <p class="page-btext">Diseño de espacios verdes - Nivelación y moldeado - Instalación de césped - Sistema de riego - Plantación</p>
+                                <!-- <a tabindex="0" class="btn btn-info btn-block" role="button" data-toggle="popover" data-trigger="focus" title="Venta de plantas" data-placement="bottom" data-content="Tenemos plantas de interior y exterior">
+                                  <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Info
+                                </a> -->
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                          <div class="thumbnail">
+                            <img src="../img/servicios03.jpg" class="img-responsive" alt="Mantenimiento">
+                            <div class="caption">
+                              <h4 class="page-btext">Mantenimiento</h4>
+                              <p class="page-btext">Jardines pequeños - Edificios - Complejos - Complejos deportivos - Espacios verdes - Áreas Públicas</p>
+                                <!-- <a tabindex="0" class="btn btn-info btn-block" role="button" data-toggle="popover" data-trigger="focus" title="Venta de plantas" data-placement="bottom" data-content="Tenemos plantas de interior y exterior">
+                                  <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Info
+                                </a> -->
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                          <div class="thumbnail">
+                            <img src="../img/servicios06.jpg" class="img-responsive" alt="Sistemas de riego">
+                            <div class="caption">
+                              <h4 class="page-btext">Sistemas de riego</h4>
+                              <p class="page-btext">Instalación agrícola o de propiedades - Service de riego - Venta de insumos de riego</p>
+                                <!-- <a tabindex="0" class="btn btn-info btn-block" role="button" data-toggle="popover" data-trigger="focus" title="Venta de plantas" data-placement="bottom" data-content="Tenemos plantas de interior y exterior">
+                                  <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Info
+                                </a> -->
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                          <div class="thumbnail">
+                            <img src="../img/servicios08.jpg" class="img-responsive" alt="Servicios para paisajistas">
+                            <div class="caption">
+                              <h4 class="page-btext">Servicios para paisajistas</h4>
+                              <p class="page-btext">Vendemos insumos y brindamos asesoramiento y logística</p>
+                                <!-- <a tabindex="0" class="btn btn-info btn-block" role="button" data-toggle="popover" data-trigger="focus" title="Venta de plantas" data-placement="bottom" data-content="Tenemos plantas de interior y exterior">
+                                  <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Info
+                                </a> -->
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                          <div class="thumbnail">
+                            <img src="../img/servicios13.jpg" class="img-responsive" alt="Iluminación de jardines">
+                            <div class="caption">
+                              <h4 class="page-btext">Iluminación de jardines</h4>
+                              <p class="page-btext">Diseñamos la iluminación para tu jardín</p>
+                                <!-- <a tabindex="0" class="btn btn-info btn-block" role="button" data-toggle="popover" data-trigger="focus" title="Venta de plantas" data-placement="bottom" data-content="Tenemos plantas de interior y exterior">
+                                  <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Info
+                                </a> -->
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                          <div class="thumbnail">
+                            <img src="../img/servicios09.jpg" class="img-responsive" alt="Construcción Pérgolas y Decks">
+                            <div class="caption">
+                              <h4 class="page-btext">Construcción Pérgolas y Decks</h4>
+                              <p class="page-btext">Nos adaptamos a tus espacios para brindarte la mejor solución</p>
+                                <!-- <a tabindex="0" class="btn btn-info btn-block" role="button" data-toggle="popover" data-trigger="focus" title="Venta de plantas" data-placement="bottom" data-content="Tenemos plantas de interior y exterior">
+                                  <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Info
+                                </a> -->
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                          <div class="thumbnail">
+                            <img src="../img/servicios04.jpg" class="img-responsive" alt="Venta de césped en rollo">
+                            <div class="caption">
+                              <h4 class="page-btext">Venta de césped en rollo</h4>
+                              <p class="page-btext">Trabajamos con la variedad bermuda y axonopus</p>
+                                <!-- <a tabindex="0" class="btn btn-info btn-block" role="button" data-toggle="popover" data-trigger="focus" title="Venta de plantas" data-placement="bottom" data-content="Tenemos plantas de interior y exterior">
+                                  <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Info
+                                </a> -->
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                          <div class="thumbnail">
+                            <img src="../img/servicios05.jpg" class="img-responsive" alt="Venta de plantas">
+                            <div class="caption">
+                              <h4 class="page-btext">Venta de plantas</h4>
+                              <p class="page-btext">Tenemos plantas de interior y exterior</p>
+                                <!-- <a tabindex="0" class="btn btn-info btn-block" role="button" data-toggle="popover" data-trigger="focus" title="Venta de plantas" data-placement="bottom" data-content="Tenemos plantas de interior y exterior">
+                                  <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Info
+                                </a> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                 </div>
+              </div>
+            </div>
+          </article>
+        </section>
 
+        <section>
+          <article>
+            <div class="container-fluid">
+              <div class="row row-text">
+                <div id="calendarios" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col">             
+                  <div class="page-header row-div title">
+                      <h3>Calendarios</h3>
+                    </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <h4 class="text-muted muted">Calendario de siembra</h4>  
+              <div class="table-responsive">
+                <table class="table table-hover table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Podar</th>
+                      <th scope="col">Recortar</th>
+                      <th scope="col">Plantar</th>
+                      <th scope="col">Abonar</th>
+                      <th scope="col">Acolchar</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Enero</th>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Febrero</th>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Marzo</th>
+                      <td></td>
+                      <td></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Abril</th>
+                      <td></td>
+                      <td></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Mayo</th>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Junio</th>
+                      <td></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Julio</th>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Agosto</th>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Septiembre</th>
+                      <td></td>
+                      <td></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Octubre</th>
+                      <td></td>
+                      <td></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Noviembre</th>
+                      <td></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Diciembre</th>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                      <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <h4 class="text-muted muted">Calendario de tareas</h4>
+              <div class="col-xs-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">             
+                <div class="panel-group">
+                    <div class="panel panel-warning">
+                      <div class="panel-heading">
+                        <h4 class="panel-title"> 
+                          <a data-toggle="collapse" href="#collapse1"><span class="panel-title-text">Enero</span></a>
+                        </h4>
+                      </div>
+                      <div id="collapse1" class="panel-collapse collapse">
+                        <ul class="list-group">
+                            <li class="list-group-item">Alverjilla</li>
+                            <li class="list-group-item">Brinco</li>
+                            <li class="list-group-item">Clavel</li>
+                            <li class="list-group-item">Cosmos</li>
+                            <li class="list-group-item">Copete</li>
+                            <li class="list-group-item">Ipomea</li>
+                            <li class="list-group-item">Portulaca</li>
+                            <li class="list-group-item">Siempreviva</li>
+                            <li class="list-group-item">Zinnia</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">
+                    <div class="panel-group">
+                        <div class="panel panel-warning">
+                          <div class="panel-heading">
+                            <h4 class="panel-title"> 
+                              <a data-toggle="collapse" href="#collapse2"><span class="panel-title-text">Febrero</span></a>
+                            </h4>
+                          </div>
+                          <div id="collapse2" class="panel-collapse collapse">
+                            <ul class="list-group">
+                                <li class="list-group-item">Alelí</li>
+                                <li class="list-group-item">Alverjilla</li>
+                                <li class="list-group-item">Caléndula</li>
+                                <li class="list-group-item">Clavel</li>
+                                <li class="list-group-item">Clavelina</li>
+                                <li class="list-group-item">Conejito</li>
+                                <li class="list-group-item">Digitalis</li>
+                                <li class="list-group-item">Ipomea</li>
+                                <li class="list-group-item">Lupino</li>
+                                <li class="list-group-item">Pensamiento</li>
+                                <li class="list-group-item">Portulaca</li>
+                                <li class="list-group-item">Vervena</li>
+                                <li class="list-group-item">Viola</li>
+                                <li class="list-group-item">Bulbos: Marimonia, Narciso</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">
+                        <div class="panel-group">
+                            <div class="panel panel-warning">
+                              <div class="panel-heading">
+                                <h4 class="panel-title"> 
+                                  <a data-toggle="collapse" href="#collapse3"><span class="panel-title-text">Marzo</span></a>
+                                </h4>
+                              </div>
+                              <div id="collapse3" class="panel-collapse collapse">
+                                <ul class="list-group">
+                                    <li class="list-group-item">Alelí</li>
+                                    <li class="list-group-item">Alverjilla</li>
+                                    <li class="list-group-item">Caléndula</li>
+                                    <li class="list-group-item">Clavel</li>
+                                    <li class="list-group-item">Clavelina</li>
+                                    <li class="list-group-item">Conejito</li>
+                                    <li class="list-group-item">Coqueta (Bellis Perennis)</li>
+                                    <li class="list-group-item">Iberis</li>
+                                    <li class="list-group-item">Linaria</li>
+                                    <li class="list-group-item">Lobelia</li>
+                                    <li class="list-group-item">Lupino</li>
+                                    <li class="list-group-item">Pensamiento</li>
+                                    <li class="list-group-item">Phlox</li>
+                                    <li class="list-group-item">Prímula ( En invernadero)</li>
+                                    <li class="list-group-item">Verbena</li>
+                                    <li class="list-group-item">Viola</li>
+                                    <li class="list-group-item">Bulbos: Amarilis e Iris</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">
+                            <div class="panel-group">
+                                <div class="panel panel-warning">
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title"> 
+                                      <a data-toggle="collapse" href="#collapse4"><span class="panel-title-text">Abril</span></a>
+                                    </h4>
+                                  </div>
+                                  <div id="collapse4" class="panel-collapse collapse">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Alelí</li>
+                                        <li class="list-group-item">Alverjilla</li>
+                                        <li class="list-group-item">Caléndula</li>
+                                        <li class="list-group-item">Clavel</li>
+                                        <li class="list-group-item">Clavelina</li>
+                                        <li class="list-group-item">Conejito</li>
+                                        <li class="list-group-item">Godetia</li>
+                                        <li class="list-group-item">Myosotis</li>
+                                        <li class="list-group-item">Pensamiento</li>
+                                        <li class="list-group-item">Phlox</li>
+                                        <li class="list-group-item">Bulbos: Azucena, Fresia, Tulipán</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">
+                                <div class="panel-group">
+                                    <div class="panel panel-warning">
+                                      <div class="panel-heading">
+                                        <h4 class="panel-title"> 
+                                          <a data-toggle="collapse" href="#collapse5"><span class="panel-title-text">Mayo</span></a>
+                                        </h4>
+                                      </div>
+                                      <div id="collapse5" class="panel-collapse collapse">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Caléndula</li>
+                                            <li class="list-group-item">Centaurea</li>
+                                            <li class="list-group-item">Clavelina</li>
+                                            <li class="list-group-item">Clavel</li>
+                                            <li class="list-group-item">Conejito</li>
+                                            <li class="list-group-item">Lupino</li>
+                                            <li class="list-group-item">Myosotis</li>
+                                            <li class="list-group-item">Pensamiento</li>
+                                            <li class="list-group-item">Verbena</li>
+                                            <li class="list-group-item">Bulbos: Azucena, Fresia, Tulipán, Peonia</li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div> 
+                                  <div class="col-xs-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">
+                                    <div class="panel-group">
+                                        <div class="panel panel-warning">
+                                          <div class="panel-heading">
+                                            <h4 class="panel-title"> 
+                                              <a data-toggle="collapse" href="#collapse6"><span class="panel-title-text">Junio</span></a>
+                                            </h4>
+                                          </div>
+                                          <div id="collapse6" class="panel-collapse collapse">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">Centaurea</li>
+                                                <li class="list-group-item">Clavelina</li>
+                                                <li class="list-group-item">Clavel</li>
+                                                <li class="list-group-item">Conejito</li>
+                                                <li class="list-group-item">Coral</li>
+                                                <li class="list-group-item">Gallardía</li>
+                                                <li class="list-group-item">Petunia</li>
+                                                <li class="list-group-item">Reina Margarita</li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">
+                                        <div class="panel-group">
+                                            <div class="panel panel-warning">
+                                              <div class="panel-heading">
+                                                <h4 class="panel-title"> 
+                                                  <a data-toggle="collapse" href="#collapse7"><span class="panel-title-text">Julio</span></a>
+                                                </h4>
+                                              </div>
+                                              <div id="collapse7" class="panel-collapse collapse">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">Coleus</li>
+                                                    <li class="list-group-item">Coral</li>
+                                                    <li class="list-group-item">Escabiosa</li>
+                                                    <li class="list-group-item">Escholtzia</li>
+                                                    <li class="list-group-item">Gallardía</li>
+                                                    <li class="list-group-item">Nigelia</li>
+                                                    <li class="list-group-item">Petunia</li>
+                                                    <li class="list-group-item">Reina Margarita</li>
+                                                    <li class="list-group-item">Bulbos: Azucena, Peonia</li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="panel-group">
+                                                <div class="panel panel-warning">
+                                                  <div class="panel-heading">
+                                                    <h4 class="panel-title"> 
+                                                      <a data-toggle="collapse" href="#collapse8"><span class="panel-title-text">Agosto</span></a>
+                                                    </h4>
+                                                  </div>
+                                                  <div id="collapse8" class="panel-collapse collapse">
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item">Ageratum</li>
+                                                        <li class="list-group-item">Alelí</li>
+                                                        <li class="list-group-item">Aquilegia</li>
+                                                        <li class="list-group-item">Celosía</li>
+                                                        <li class="list-group-item">Centaurea</li>
+                                                        <li class="list-group-item">Clarkia</li>
+                                                        <li class="list-group-item">Clavel</li>
+                                                        <li class="list-group-item">Clavelina</li>
+                                                        <li class="list-group-item">Conejito</li>
+                                                        <li class="list-group-item">Copete</li>
+                                                        <li class="list-group-item">Cosmos</li>
+                                                        <li class="list-group-item">Crisantemo</li>
+                                                        <li class="list-group-item">Gallardía</li>
+                                                        <li class="list-group-item">Godetia</li>
+                                                        <li class="list-group-item">Gypsophila</li>
+                                                        <li class="list-group-item">Iberis</li>
+                                                        <li class="list-group-item">Ipomea</li>
+                                                        <li class="list-group-item">Lobelia</li>
+                                                        <li class="list-group-item">Nigelia</li>
+                                                        <li class="list-group-item">Petunia</li>
+                                                        <li class="list-group-item">Reina Margarita</li>
+                                                        <li class="list-group-item">Coral</li>
+                                                        <li class="list-group-item">Siempreviva</li>
+                                                        <li class="list-group-item">Verbena</li>
+                                                        <li class="list-group-item">Zinnia</li>
+                                                        <li class="list-group-item">Bulbos: Dalia, Gladiolo</li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">
+                                                <div class="panel-group">
+                                                    <div class="panel panel-warning">
+                                                      <div class="panel-heading">
+                                                        <h4 class="panel-title"> 
+                                                          <a data-toggle="collapse" href="#collapse9"><span class="panel-title-text">Sept, Oct y Nov</span></a>
+                                                        </h4>
+                                                      </div>
+                                                      <div id="collapse9" class="panel-collapse collapse">
+                                                        <ul class="list-group">
+                                                            <li class="list-group-item">Todas las de Agosto y además:</li>
+                                                            <li class="list-group-item">Aliso</li>
+                                                            <li class="list-group-item">Anchusa</li>
+                                                            <li class="list-group-item">Bella de día</li>
+                                                            <li class="list-group-item">Bella de noche</li>
+                                                            <li class="list-group-item">Portulaca</li>
+                                                            <li class="list-group-item">Reseda</li>
+                                                            <li class="list-group-item">Bulbos: Achira, Dalia, Gladiolo, Nardo</li>
+                                                        </ul>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">
+                                                    <div class="panel-group">
+                                                        <div class="panel panel-warning">
+                                                          <div class="panel-heading">
+                                                            <h4 class="panel-title"> 
+                                                              <a data-toggle="collapse" href="#collapse10"><span class="panel-title-text">Diciembre</span></a>
+                                                            </h4>
+                                                          </div>
+                                                          <div id="collapse10" class="panel-collapse collapse">
+                                                            <ul class="list-group">
+                                                                <li class="list-group-item">Alelí</li>
+                                                                <li class="list-group-item">Capuchina</li>
+                                                                <li class="list-group-item">Coleus</li>
+                                                                <li class="list-group-item">Copete</li>
+                                                                <li class="list-group-item">Cosmos</li>
+                                                                <li class="list-group-item">Espuela de caballero</li>
+                                                                <li class="list-group-item">Godetia</li>
+                                                                <li class="list-group-item">Ipomea</li>
+                                                                <li class="list-group-item">Portulaca</li>
+                                                                <li class="list-group-item">Phlox</li>
+                                                                <li class="list-group-item">Siempreviva</li>
+                                                                <li class="list-group-item">Zinnia</li>
+                                                            </ul>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>                                            
+                                        </article>
+                                      </section>
 
-</body>
+  <section>
+    <article>
+      <div class="container-fluid">
+          <div class="row row-text">
+            <div id="trabajos" class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col">             
+              <div class="page-header row-div title">
+                  <h3>Trabajos Realizados</h3>
+                </div>
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item" src="../img/video.mp4" controls></video>
+            </div>
+          </div>
+        </div>
+          <div id="suscripciones" class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col">
+              <div class="page-header row-div title">
+                  <h3>Suscripciones</h3>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <h4 class="text-muted muted">Si querés informarte sobre todas nuestras novedades, suscribite a nuestro newsletter mensual sin costo!</h4>
+                <button type="button" class="btn btn-danger btn-lg muted" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Suscribirme!</button>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          <h4 class="modal-title" id="exampleModalLabel">Sumate a nuestra Newsletter!</h4>
+                        </div>
+                        <div class="modal-body">
+                          <form data-toggle="validator">
+                              <div class="form-group">
+                                <label for="inputEmail" class="control-label"><span class="glyphicons glyphicons-message-plus"></span>Email</label>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Correo electrónico" data-error="Ingresa tu correo electrónico" required>
+                                <div class="help-block with-errors"></div>
+                              </div>
+                              <div class="modal-footer">
+                              <div class="form-group">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                                <button type="submit" class="btn btn-primary">Enviar suscripción</button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
 
-</body>
+      <a id="back-to-top" href="#" class="btn btn-default btn-lg back-to-top" role="button" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+    
+      <footer>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <small>© Copyright 2018 Gonzalo Otheguy Inc. <em>Derechos Reservados.</em></small>
+            </div>
+          </div>
+        </div>
+    </footer>
+  </body>
 </html>
